@@ -1,0 +1,207 @@
+:root{
+    --theme: rgb(0, 117, 111);
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow-anchor: none;
+}
+html {
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+}
+header {
+    width: 100%;
+    background-color: darkgray;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    height: 80px;
+}
+header h1 {
+    width: 100%;
+}
+header .menu-icon {
+    display: none;
+}
+nav {
+    width: 100%;
+    font-weight: bold;
+    background: darkgray;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    display: inline;
+    padding: 5px; 
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.active, .active a {
+    background-color: white;
+    color: black;
+}
+.click a {
+    color: darkgray;
+    font-weight: normal;
+}
+footer {
+    position: fixed;
+    display: flex;
+    background-color: darkgray;
+    justify-content: space-evenly;
+    height: 80px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 3;
+}
+.cred-full {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#show-creds, #change-creds {
+    width: 30%; 
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--theme);
+    box-shadow: 0 0 5px 1px #777 inset;
+    color: white;
+}
+.cred-full, .cred-empty {
+    display: none;
+    width: 100%;
+}
+.cred-empty {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--theme);
+    box-shadow: 0 0 5px 1px #777 inset;
+    color: white;
+}
+#bc-box {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    justify-content: center;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+    user-select: none;
+}
+#bc-target {
+    margin-top: 50px;
+}
+.input-box {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+    bottom: 0px;
+    background-color: var(--theme);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s linear;
+    box-shadow: 0px -5px 10px  maroon inset;
+    color: white;
+    font-size: 1.2rem;
+}
+input {
+    margin: 5px;
+    font-size: 1.2rem;
+    width: 20%;
+    text-align: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    text-align: left;
+    padding: 5px 0 5px 10px;  
+    width: 80%; 
+    display: inline-block;
+}
+header .menu-icon {
+    display: inline-block;
+    padding-right: 20px;
+    color: white;
+}
+nav {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    background-color: darkgray;
+    z-index: 2;
+    overflow: scroll;
+}
+.accordian {
+    margin: 10px auto 100px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    overflow: scroll;
+}
+.accordian-title {
+    color: white;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+.expanded {
+    border-bottom: none;
+}
+.accordian-info {
+    display: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+.phone {
+    font-size: 1.2rem;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(143, 40, 146);
+}
+.when-to-use {
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+}
+i {
+    margin: 10px;
+}
+#bc-target {
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    10% { transform: translate( 5px, 0px);}
+    20% { transform: translate( -5px, 0px);}
+    30% { transform: translate( 5px, 0px);}
+    40% { transform: translate( -5px, 0px);}
+    50% { transform: translate( 0px, 0px);}
+  }
+  

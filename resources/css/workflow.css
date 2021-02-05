@@ -1,0 +1,40 @@
+:root{
+    --theme: rgb(0, 117, 111);
+}
+h2 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+    margin-top: 20px;
+}
+h6 {
+    font-size: 0.7rem;
+    text-align: center;
+}
+.instructions {
+    margin: 20px 0 10px 0;
+    height: 200px;
+    overflow: scroll;
+}
+.grid-container {
+    display: grid;    
+    grid-template: 1fr 1fr / 3fr 2fr;
+    gap: 10px;
+}
+.option {
+    color: var(--theme);
+    font-weight: bold;
+    background-color: lightgray;
+    box-shadow: 0 0 10px black inset;
+    border-radius: 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.c {
+    grid-row: 1 / span 2;
+}

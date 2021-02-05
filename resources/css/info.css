@@ -1,0 +1,38 @@
+:root{
+    --theme: rgb(0, 117, 111);
+}
+.accordian {
+    margin: 10px auto 100px;
+    width: 100%;
+    text-align: center;
+}
+.accordian-title {
+    color: white;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+.expanded {
+    border-bottom: none;
+}
+.accordian-info {
+    display: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+.phone {
+    font-size: 1.2rem;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(143, 40, 146);
+}
+.when-to-use {
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+}
+i {
+    margin: 10px;
+}
